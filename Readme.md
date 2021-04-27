@@ -6,10 +6,10 @@ Clone o repositório do Github que virá com a base e o código escrito em um Ju
 
 Utilizei um imagem docker **jupyter/pyspark-notebook** mantida pela Jupyter para facilicar a execução!
 
-Antes de rodar o comando Docker **troque** a demarcação `${caminho-local}}` pelo **caminho completo** onde fez o clone do repositório.
+Antes de rodar o comando Docker **troque** a demarcação `[caminho-local]` pelo **caminho completo** onde fez o clone do repositório.
 
 ```sh
-docker run -it --rm -p 8888:8888 -v ${caminho-local}/desafio_pyspark:/home/jovyan/work jupyter/pyspark-notebook
+docker run -it --rm -p 8888:8888 -v [caminho-local]/desafio_pyspark:/home/jovyan/work jupyter/pyspark-notebook
 ```
 
 Para sair é só executar o comando Ctrl + c e digitar "yes" que o Jupyter Notebook será encerrado e o Docker vai deletar o Container.
